@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(to bottom, black, #0044cc);
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 68, 204, 0.5);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px #3399ff;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #99ccff;
+    text-shadow: 0 0 10px #66aaff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #0044cc;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+/* Content Sections */
+section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    color: white;
+    scroll-margin-top: 120px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    margin-top: 40px;
+    color: white;
+}
+
+footer a {
+    color: #66aaff;
+    text-decoration: none;
+}
+
+/* Back to Top Button */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 18px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #3399ff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#backToTop:hover {
+    background-color: #0055ff;
+    transform: scale(1.1);
+}
