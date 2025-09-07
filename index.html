@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostafa Mohamed - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Hello To</h1>
+            <h2>Mostafa's Portfolio</h2>
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Mostafa Mohamed, an ambitious software engineering undergraduate seeking internships to gain knowledge and experience in different tracks.</p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Programming Languages: Python & C++</li>
+            <li>Cloud Computing: AWS & Huawei</li>
+            <li>Problem Solving using C++</li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>NTI Cloud Essentials Course</h3>
+        <ul>
+            <li>Completed a comprehensive course on cloud computing fundamentals where I gained hands-on experience with AWS and Huawei cloud platforms.</li>
+            <li>Worked on a team project to deploy a web application on AWS, utilizing services such as EC2, S3, and RDS.</li>
+        </ul>
+        <h3>Digital Egypt Cubs Initiative</h3>
+        <ul>
+            <li>Participated in a program aimed at enhancing digital skills among youth, focusing on major skills such as Python & graphic design.</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>C++ Game</h3>
+        <ul>
+            <li>Developed a tower game where you try climbing the tower, avoiding obstacles and enemies. Every level has a different challenge and different random bosses.</li>
+        </ul>
+        <h3>Python Adventure Game</h3>
+        <ul>
+            <li>Created an interactive adventure game using Python, where players navigate through a storyline by making choices that affect the outcome.</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label>Name:</label><br>
+            <input type="text" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" required><br><br>
+
+            <label>Work:</label>
+            <input type="checkbox" required><br><br>
+
+            <label>Meeting Date:</label>
+            <input type="date"><br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="4" cols="30" required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+            <input type="reset" value="Reset"><br><br>
+
+            <label>Upload File:</label><br>
+            <input type="file"><br><br>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mostafa Mohamed. All rights reserved.</p>
+        <p>Connect with me:
+            <a href="https://www.linkedin.com/in/mostafa-mohamed-3b2092327" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <script>
+        // Show button when scrolling down
+        const backToTopBtn = document.getElementById("backToTop");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top smoothly
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+</body>
+</html>
